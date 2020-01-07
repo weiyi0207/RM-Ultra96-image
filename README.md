@@ -16,5 +16,7 @@ File name | Description
 --|--
 Bootfiles | Boot files for Ultra96
 Bootfiles/BOOT.BIN | FSBL, Bitstream, ATF, PMUFW, Uboot to boot Ultra96
-Bootfiles/image.ub | Linux kernel image(Version 4.14) for Ultra96
-misc/libXF_Accel.so | Shared library of hardware accelerated functions
+Bootfiles/Image | Linux kernel image(Version 4.14) for Ultra96
+Bootfiles/system.dtb | Linux device tree blob contains DPU information
+misc/libdpumodelyolo.so | yolo model compiled as Shared library, users should place the model under */usr/lib*
+misc/yolo.prototxt      | yolo model configuration file, users should place it under */etc/XILINX_AI_SDK.conf.d/*
